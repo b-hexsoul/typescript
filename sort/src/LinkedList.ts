@@ -1,12 +1,14 @@
 // This linked list implementation contains numbers as the type of node values.
 
+import {Sorter} from "./Sorter";
+
 class Node {
   next: Node | null = null;
 
   constructor(public value: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter{
   size: number = 0
   head: Node | null = null;
   tail: Node | null = null;
